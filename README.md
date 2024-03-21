@@ -1,6 +1,6 @@
 # Malw_Dev
 ## C
-There are process injection, reverse shell socket connection and persistency codes separately.
+There are process injection, reverse shell socket connection, persistency and stealer codes separately.
 ### Process Injection
 Customer's security solutions may detect the suspicious Win32 functions like **VirtualAllocEx**, **WriteProcessMemory**, **CreateRemoteThread**. Therefore, there is another program which uses Native API versions of **OpenProcess**, **VirtualAllocEx**, **WriteProcessMemory**, **CreateRemoteThread**, **CloseHandle**.
 * OpenProcess -> NtOpenProcess
@@ -13,6 +13,8 @@ This part of malware gives the attacker connection to the victim and provides ex
 ### Persistency
 Malware saves itself on the registry key: **HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run**
 This will assure that the malware will run each time the victim's computer is booted.
+### Stealer
+Malware steals data from **Chrome** and **Edge** browsers. It looks for **History** (search history and downloads history) and **Login Data** (user credentials saved for automatical login) databases. The variety of browsers and databases can be increased but this stealer is done for **PoC** yet.
 ### Soon to be added:
 * Keylogger
 ## Python
