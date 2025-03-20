@@ -25,3 +25,4 @@ There are simple malware codes like;
 * Reverse shell provider (socket programming)
 * Cracking the passwords hashed with SHA256
 * Ransomware and its decryptor
+Note: THIS PROJECT IS DONE FOR EDUCATIONAL PURPOSES. I WANT TO IMPROVE MYSELF IN MALWARE ANALYSIS, THAT'S WHY I DID THIS PROJECT. I DO NOT ACCEPT ANY RESPONSIBILITY FOR MISUSE OF THE CODE.
